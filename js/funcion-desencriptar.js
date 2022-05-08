@@ -1,6 +1,8 @@
 botonDesencriptar.addEventListener("click", function () {
+
     let textoIngresado = campoTextoIngresado.value;
     campoTextoResultante.value = desencriptarTexto(textoIngresado);
+
 });
 
 function desencriptarTexto(textoIngresado) {
