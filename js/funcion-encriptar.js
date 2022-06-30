@@ -1,7 +1,9 @@
 botonEncriptar.addEventListener("click", function () {
 
     let textoIngresado = campoTextoIngresado.value;
-    campoTextoResultante.value = encriptarTexto(textoIngresado);
+    campoTextoResultado.value = encriptarTexto(textoIngresado);
+    contenedorMunieco.classList.add("ocultar");
+    contenedorTextoResultado.classList.remove("ocultar");
 
 });
 
