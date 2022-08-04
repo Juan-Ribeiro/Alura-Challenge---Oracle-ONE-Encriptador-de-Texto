@@ -1,9 +1,8 @@
 botonDesencriptar.addEventListener("click", function () {
-
     let textoIngresado = campoTextoIngresado.value;
     campoTextoResultado.value = desencriptarTexto(textoIngresado);
-    contenedorMunieco.classList.add("ocultar");
-    contenedorTextoResultado.classList.remove("ocultar");
+    contenedorTextoResultadoNingunMensaje.classList.add("ocultar");
+    contenedorTextoResultadoDesencriptado.classList.remove("ocultar");
 });
 
 function desencriptarTexto(textoIngresado) {

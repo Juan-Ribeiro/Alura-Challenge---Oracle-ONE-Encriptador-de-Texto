@@ -1,0 +1,67 @@
+:root {
+    --fondo__pagina: #F3F5FC;
+
+    --azul-300: #0A3871;
+    --gris-500: #343A40;
+    --gris-400: #495057;
+
+    font-family: "Inter", "sans-serif", serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--fondo__pagina);
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.ocultar {
+    display: none;
+}
+
+.texto-h2 {
+    font-size: 2rem;
+}
+
+.texto-h3 {
+    font-size: 1.5rem;
+}
+
+.texto-h4 {
+    font-size: 1rem;
+}
+
+.texto-h5 {
+    font-size: .75rem;
+    line-height: 1.125rem;
+}
+
+.texto-bold {
+    font-weight: 700;
+    color: var(--gris-500);
+    line-height: 120%;
+}
+
+.texto-regular {
+    font-weight: 400;
+    color: var(--gris-400);
+    line-height: 150%;
+}
+
+.boton {
+    padding: 1.5rem;
+    border: 1px solid;
+    border-radius: 1.5rem;
+    text-align: center;
+    align-self: stretch;
+    flex-grow: 1;
+}

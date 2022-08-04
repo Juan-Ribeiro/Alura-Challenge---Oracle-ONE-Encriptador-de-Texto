@@ -1,0 +1,6 @@
+@media screen and (max-width: 1440px) {
+    .head {
+        padding: 1.5rem 1rem;
+        display: flex;
+    }
+}

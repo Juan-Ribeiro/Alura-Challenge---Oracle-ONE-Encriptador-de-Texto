@@ -3,70 +3,70 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Alura Challenge - Oracle ONE Encriptador de Texto</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@300&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/head.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/seccion__texto-resultado.css" rel="stylesheet">
+    <link href="css/seccion__acciones.css" rel="stylesheet">
+    <link href="css/seccion__texto-introducido.css" rel="stylesheet">
+    <link href="css/foot.css" rel="stylesheet">
+    <link href="css/escritorio.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-    <section id="logo-alura">
-        <img src="img/logo.png" alt="Logo">
+    <section class="head">
+        <img class="head__logo" src="img/logo__alura.svg" alt="Logo">
     </section>
 </header>
 
 <main>
-    <section id="seccion-texto-introducido">
-        <label for="area-texto-introducido"></label>
-        <textarea id="area-texto-introducido" placeholder="Ingrese el texto aquí"></textarea>
-    </section>
-
-    <section id="seccion-contrato-texto-introducido">
-        <img src="img/signo-exclamacion.png" alt="!" id="circulo-exclamacion">
-        <p id="contrato-texto-introducido">Sólo letras minúsculas y sin acentos</p>
-    </section>
-
-    <section id="seccion-botones-en-desencriptar">
-        <button id="boton-encriptar" class="boton">Encriptar</button>
-        <button id="boton-desencriptar" class="boton">Desencriptar</button>
-    </section>
-
-    <section id="seccion-texto-resultado">
-        <div id="contenedor-munieco">
-            <img src="img/munieco.png" alt="Muñeco" id="munieco">
-
-            <div id="contenedor-mensaje-no-encontrado">
-                <p id="mensaje-no-encontrado">Ningún mensaje fue encontrado</p>
-                <p id="ingrese-un-texto">Ingrese el texto a encriptar o desencriptar</p>
-            </div>
+    <section class="seccion__texto-resultado">
+        <div class="seccion__texto-resultado__desencriptado" style="display: none">
+            <textarea class="seccion__texto-resultado__desencriptado__area-texto" id="texto-resultado"
+                      readonly></textarea>
+            <button class="seccion__texto-resultado__desencriptado__boton-copiar-texto boton" id="boton-copiar-texto">
+                Copiar
+            </button>
         </div>
 
-        <div id="contenedor-texto-resultado" class="ocultar">
-            <div id="contenedor-texto-desencriptado">
-                <label for="area-texto-resultado"></label>
-                <textarea id="area-texto-resultado" readonly></textarea>
-            </div>
-            <div id="contenedor-boton-copiar">
-                <button id="boton-copiar-texto" class="boton">Copiar</button>
-            </div>
+        <div class="seccion__texto-resultado__contenedor-ningun-mensaje">
+            <img class="seccion__texto-resultado__contenedor-ningun-mensaje__munieco" src="img/munieco.svg"
+                 alt="Muñeco">
+            <h3 class="texto-h3 texto-bold">Ningún mensaje fue encontrado.</h3>
+            <h4 class="texto-h4 texto-regular">Ingresa el texto que desees encriptar o desencriptar.</h4>
         </div>
     </section>
 
+    <section class="seccion__acciones">
+        <div class="seccion__acciones__contrato">
+            <img class="seccion__acciones__contrato__icono" src="img/icono__signo-exclamacion.svg"
+                 alt="Signo de exclamación">
+            <p class="seccion__botones__contrato__texto texto-regular">Sólo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="seccion__acciones__botones">
+            <button class="boton" id="boton-encriptar">Encriptar</button>
+            <button class="boton" id="boton-desencriptar">Desencriptar</button>
+        </div>
+    </section>
+
+    <section class="seccion__texto-introducido">
+        <textarea class="seccion__texto-introducido__area-texto texto-regular" id="texto-ingresado"
+                  placeholder="Ingrese el texto aquí"></textarea>
+    </section>
 </main>
-
-<footer>
-    <section id="seccion-copyright">
-        <h2>
-            &copy; 2022 - Juan Elías Ribeiro
-        </h2>
+<footer class="foot">
+    <section class="foot__creditos">
+        <a class="foot__creditos__link texto-regular" href="#">Desarrollado por Juan Elias Ribeiro<br>2022</a>
     </section>
 </footer>
-
 <script src="js/variables-de-elementos-html.js"></script>
 <script src="js/funcion-encriptar.js"></script>
 <script src="js/funcion-desencriptar.js"></script>

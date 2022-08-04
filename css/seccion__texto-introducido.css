@@ -1,0 +1,33 @@
+.seccion__texto-introducido {
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion__texto-introducido__area-texto {
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+
+    color: var(--azul-300);
+    font-size: 2rem;
+}
+
+.seccion__texto-introducido__area-texto::placeholder {
+    color: var(--azul-300);
+}
+
+/*@media screen and (max-width: 1024px){*/
+/*    .seccion__texto-introducido__area-texto {*/
+/*        height: 20rem;*/
+/*        max-width: 100%;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (min-width: 1024px) {*/
+/*    .seccion__texto-introducido__area-texto {*/
+/*        height: 20rem;*/
+/*        max-width: 42.5rem;*/
+/*    }*/
+/*}*/

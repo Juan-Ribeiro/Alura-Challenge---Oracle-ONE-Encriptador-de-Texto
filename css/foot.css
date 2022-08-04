@@ -1,0 +1,14 @@
+.foot__creditos {
+    padding: 2rem;
+    text-align: center;
+}
+
+.foot__creditos__link {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .foot {
+        width: 100%;
+    }
+}

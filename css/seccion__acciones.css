@@ -1,0 +1,47 @@
+.seccion__acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.seccion__acciones__contrato {
+    display: flex;
+    gap: .5rem;
+}
+
+.seccion__acciones__contrato__icono {
+    size: 1rem;
+}
+
+.seccion__acciones__botones {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: stretch;
+}
+
+.seccion__acciones__botones #boton-encriptar {
+    background: var(--azul-300);
+    color: #FFFFFF;
+}
+
+.seccion__acciones__botones #boton-desencriptar {
+    background: transparent;
+    color: var(--azul-300);
+}
+
+@media screen and (min-width: 768px) {
+    .seccion__acciones__botones {
+        flex-direction: row;
+        gap: 1.5rem;
+        align-items: stretch;
+    }
+}
+
+/*@media screen and (min-width: 1024px) {*/
+/*    .seccion__acciones {*/
+/*        width: 42.5rem;*/
+/*        left: 15rem;*/
+/*        align-self: center;*/
+/*    }*/
+/*}*/
