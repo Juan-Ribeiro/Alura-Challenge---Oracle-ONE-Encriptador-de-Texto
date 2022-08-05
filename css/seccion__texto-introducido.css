@@ -12,6 +12,9 @@
 
     color: var(--azul-300);
     font-size: 2rem;
+
+    position: relative;
+    height: 100%;
 }
 
 .seccion__texto-introducido__area-texto::placeholder {

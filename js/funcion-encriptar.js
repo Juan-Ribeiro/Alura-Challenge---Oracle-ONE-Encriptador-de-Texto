@@ -2,7 +2,7 @@ botonEncriptar.addEventListener("click", function () {
     let textoIngresado = campoTextoIngresado.value;
     campoTextoResultado.value = encriptarTexto(textoIngresado);
 
-    contenedorTextoResultadoNingunMensaje.style.display = "none";
+    contenedorTextoResultadoNingunMensaje.remove();
     contenedorTextoResultadoDesencriptado.style.display = "flex";
 });
 

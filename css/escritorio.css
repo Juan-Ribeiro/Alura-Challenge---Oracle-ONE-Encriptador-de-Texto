@@ -29,7 +29,7 @@
         right: 4rem;
         bottom: 12rem;
 
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -87,7 +87,7 @@
         position: absolute;
         top: 6rem;
         left: 6rem;
-        right: 30rem;
+        right: 34rem;
         bottom: 18rem;
     }
 
@@ -101,7 +101,7 @@
 
     .seccion__acciones {
         position: absolute;
-        right: 30rem;
+        right: 34rem;
         bottom: 10rem;
     }
 
